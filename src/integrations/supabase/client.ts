@@ -5,9 +5,6 @@ import type { Database } from './types';
 const SUPABASE_URL = "__SUPABASE_URL__";
 const SUPABASE_PUBLISHABLE_KEY = "__SUPABASE_ANON__";
 
-// Import the supabase client like this:
-// import { supabase } from "@/integrations/supabase/client";
-
 export const supabase = createClient<Database>(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY, {
   auth: {
     storage: localStorage,
